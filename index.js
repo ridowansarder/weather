@@ -8,6 +8,13 @@ const humidity = document.querySelector(".humid");
 const windSpeed = document.querySelector(".windSpeed");
 const weather = document.querySelector(".weather")
 
+cityInput.addEventListener("input", () => {
+  if (cityInput.value.trim() === ""){
+    weather.style.display = "none";
+    document.getElementById("cityNotFound").textContent = "";
+  }
+})
+
 button.addEventListener("click", async (e) => {
   e.preventDefault();
   const city = cityInput.value;
