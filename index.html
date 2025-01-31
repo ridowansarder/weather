@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ridu's weather app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>A weather app <span style="font-size: small;">by Ridwan</span></h1>
+    <div class="form">
+      <input type="text" class="cityInput" placeholder="enter a city name" spellcheck="false">
+      <button type="submit" class="submit"><img src="./images/search.png"></button>
+    </div>
+    <p id="cityNotFound" ></p>
+    <div class="weather" style="display: none;">
+      
+      <img src="./images/clear.png" class="condition">
+      <p class="temp"></p>
+      <h2 class="city">Dhaka</h2>
+    
+      <div class="extra">
+        <div class="humidity">
+          <img src="./images/humidity.png" class="humidityIcon">
+          <p class="humid">68% <br>Humidity</p>
+        </div>
+        <div class="wind">
+          <img src="./images/wind.png" class="windIcon">
+          <p class="windSpeed">18 km/h <br> Wind Speed</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

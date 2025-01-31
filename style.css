@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, hsla(240, 100%, 50%, 0.725), hsla(39, 100%, 50%, 0.64));
+  height: 100vh;
+}
+h1{
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.form{
+  display: flex;
+  align-items: center;
+}
+.cityInput{
+  width: 100%;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  color: black;
+  
+}
+button{
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+button img{
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+h1 span {
+  font-style: italic;
+}
+input::placeholder{
+  text-align: center;
+}
+.condition{
+  height: 100px;
+  width: 100px;
+  
+}
+.weather{
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h2{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.temp{
+  text-align: center;
+}
+.humidity{
+  display: flex;
+  margin-right: 40px;
+}
+.humidityIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.wind{
+  display: flex;
+
+}
+.windIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.extra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#cityNotFound{
+  margin-top: 20px;
+}
